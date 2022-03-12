@@ -26,6 +26,8 @@ const FooterThree = () => {
                                        <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                        <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
                                        <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                                       <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
+                                       <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
                                     </ul>
                                  </div>
                               </div>
@@ -59,9 +61,9 @@ const FooterThree = () => {
                               <div className="footer__widget-body">
                                  <div className="footer__link">
                                     <ul>
-                                       <li><Link href="/instructor"><a>Browse Library</a></Link></li>
-                                       <li><Link href="/instructor"><a>Library</a></Link></li>
-                                       <li><Link href="/instructor"><a>Partners</a></Link></li>
+                                       
+                                       
+                                       
                                        <li><Link href="/blog"><a>News & Blogs</a></Link></li>
                                        <li><Link href="/about"><a>FAQs</a></Link></li>
                                        <li><Link href="/course-grid"><a>Tutorials</a></Link></li>

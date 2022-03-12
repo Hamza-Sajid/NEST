@@ -19,10 +19,10 @@ class Hero extends Component {
                                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                                     <div className="hero__content p-relative z-index-1">
                                     <h3 className="hero__title">
-                                        <span>Access 2700+</span>
-                                        <span className="yellow-shape">Online <img src="assets/img/shape/yellow-bg.png" alt="yellow-shape"/> </span> 
-                                        Tutorial From Top Instructor.</h3>
-                                        <p>Meet university,and cultural institutions, who'll share their experience.</p>
+                                        <span>Tomorrow is our </span>
+                                        <span className="yellow-shape">“When I Grow Up”  <img src="assets/img/shape/yellow-bg.png" alt="yellow-shape"/> </span> 
+                                       </h3>
+                                        <p>Spirit Day! ---- to ---- Pakistan's first Edtech platform providing quality education at home.</p>
                                         <Link href="/course-grid"><a className="e-btn">view all course</a></Link>
                                     </div>
                                 </div>

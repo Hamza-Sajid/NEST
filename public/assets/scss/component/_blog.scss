@@ -25,7 +25,7 @@
         }
         & a{
             &:hover{
-                color: $e-blue;
+                color: #55B24B;
             }
         }
     }
@@ -82,10 +82,10 @@
                 }
             }
             &.blue{
-                background: rgba($color: $e-blue, $alpha: .1);
-                color: $e-blue;
+                background: rgba($color: #55B24B, $alpha: .1);
+                color: #55B24B;
                 &:hover{
-                    background: $e-blue;
+                    background: #55B24B;
                     color: $white;
                 }
             }
@@ -103,7 +103,7 @@
                 margin-right: 8px;
                 @include border-radius(4px);
                 &:hover{
-                    background: $e-blue;
+                    background: #55B24B;
                     color: $white;
                 }
             }
@@ -249,7 +249,7 @@
                 font-size: 24px;
             }
             & a{
-                color: $e-blue;
+                color: #55B24B;
             }
         }
     }
@@ -343,7 +343,7 @@
                 }
                 &:focus{
                     background: $white;
-                    border-color: $e-blue;
+                    border-color: #55B24B;
                 }
             }
             & textarea{
@@ -376,7 +376,7 @@
                 }
                 &:checked{
                     position: relative;
-                    background-color: $e-blue;
+                    background-color: #55B24B;
                     border-color: transparent;
                     &::after{
                         box-sizing: border-box;
@@ -409,7 +409,7 @@
                     font-weight: 600;
                     padding-left: 4px;
                     &:hover{
-                        color: $e-blue;
+                        color: #55B24B;
                     }
                 }
                 &:hover{
@@ -504,9 +504,9 @@
                         @include border-radius(50%);
                     }
                     &:hover{
-                        color: $e-blue;
+                        color: #55B24B;
                         &::after{
-                            background: $e-blue;
+                            background: #55B24B;
                         }
                     }
                 }
@@ -528,7 +528,7 @@
             margin-bottom: 10px;
             &:hover{
                 color: $white;
-                background: $e-blue;
+                background: #55B24B;
             }
         }
     }
@@ -569,7 +569,7 @@
         line-height: 1.1;
         & a{
             &:hover{
-                color: $e-blue;
+                color: #55B24B;
             }
         }
     }
@@ -646,8 +646,8 @@
     margin-top: 10px;
     & a{
         display: inline-block;
-        color: $e-blue;
-        background: rgba($color: $e-blue, $alpha: .1);
+        color: #55B24B;
+        background: rgba($color: #55B24B, $alpha: .1);
         height: 20px;
         line-height: 22px;
         padding: 0 8px;
@@ -656,7 +656,7 @@
         @include border-radius(4px);
         &:hover{
             color: $white;
-            background: $e-blue;
+            background: #55B24B;
         }
     }
 }

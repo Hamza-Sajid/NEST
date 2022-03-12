@@ -35,7 +35,7 @@ const HeaderFour = () => {
 		<React.Fragment>
 			<Head>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                <title>Educal – Online Course and Education React, Nextjs Template</title>
+                <title>NEST-Education System</title>
             </Head>
 			<header>
                 <div id="header-sticky" className="header__area header__padding-2 header__shadow">

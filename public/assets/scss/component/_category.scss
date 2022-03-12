@@ -23,8 +23,8 @@
             padding-right: 30px;
         }
         &:hover{
-            background: $e-blue;
-            border-color: $e-blue;
+            background: #55b24b;
+            border-color: #55b24b;
             @include box-shadow(0px 20px 30px 0px rgba(4, 23, 118, 0.3));
             & .category__title{
                 color: $white;
@@ -56,10 +56,10 @@
                 fill:#CEE1F2;
             }
             & .st1{
-                fill:#3444F1;
+                fill:#55b24b;
             }
             & .st4{
-                fill: #3444F1;
+                fill: #55b24b;
             }
             & .st2{
                 fill:#FFB31F;

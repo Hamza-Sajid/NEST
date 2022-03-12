@@ -18,13 +18,15 @@ const FooterStyleTwo = () => {
                                  </div>
                               </div>
                               <div className="footer__widget-body footer__widget-body-2">
-                                 <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best.</p>
+                                 <p>NEST LMS helps organizations and institutions offer a highly effective online learning and training solution.</p>
 
                                  <div className="footer__social">
                                     <ul>
                                         <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                        <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
                                        <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                                       <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
+                                       <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp-p']} /></i></a></li>
                                     </ul>
                                  </div>
                               </div>

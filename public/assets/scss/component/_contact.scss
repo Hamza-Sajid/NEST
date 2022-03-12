@@ -196,6 +196,14 @@
                             background: #d8163f;
                         }
                     }
+                    &.wts{
+                        color: #55b24b;
+                        background: rgba($color: #55b24b, $alpha: .1);
+                        &:hover{
+                            color: $white;
+                            background: #55b24b;
+                        }
+                    }
                 }
             }
         }

@@ -89,8 +89,8 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>Email us directly</h4>
-                                       <p><a href="mailto:support@educal.com">support@educal.com</a></p>
-                                       <p><a href="mailto:info@educal.com"> info@educal.com</a></p>
+                                       <p><a href="mailto:info@nest.net.pk">info@nest.net.pk</a></p>
+                                       <p><a href="mailto:admissions@nest.net.pk">admissions@nest.net.pk</a></p>
                                     </div>
                                  </div>
                               </li>
@@ -103,8 +103,8 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>Phone</h4>
-                                       <p><a href="tel:+(426)-742-26-44">+(426) 742 26 44</a></p>
-                                       <p><a href="tel:+(224)-762-442-32">+(224) 762 442 32</a></p>
+                                       <p><a href="tel:+(426)-742-26-44">+(92) 345-6669223</a></p>
+                                       <p><a href="tel:+(224)-762-442-32">+(92) 333-8165540</a></p>
                                     </div>
                                  </div>
                               </li>
@@ -116,6 +116,7 @@ class GetInTouch extends Component {
                                 <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
                                 <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
                                 <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
+                                <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
                               </ul>
                            </div>
                         </div>
