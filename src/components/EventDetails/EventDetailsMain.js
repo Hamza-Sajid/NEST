@@ -141,8 +141,8 @@ class EventDetailsMain extends Component {
                                             <img src="assets/img/events/sponsor-logo.png" alt="img not found"/>
                                         </div>
                                         <div className="events__sponsor-info">
-                                            <h3>Thomas R. Toe</h3>
-                                            <h4>Email: <span>support@educal.com</span></h4>
+                                            <h3>Hamza</h3>
+                                            <h4>Email: <span> info@nest.net.pk</span></h4>
                                             <div className="events__social d-xl-flex align-items-center">
                                                 <h4>Share:</h4>
                                                 <ul>

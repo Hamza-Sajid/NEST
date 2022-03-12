@@ -100,7 +100,7 @@ const FooterStyleTwo = () => {
                      <div className="row">
                         <div className="col-xxl-12">
                            <div className="footer__copyright footer__copyright-2 text-center">
-                              <p>© 2022 Educal, All Rights Reserved. Design By <Link href="/"><a>Theme Pure</a></Link></p>
+                              <p>© 2022 NEST, All Rights Reserved. Design By <Link href="/"><a>Webbie </a></Link></p>
                            </div>
                         </div>
                      </div>
