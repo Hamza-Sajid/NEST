@@ -16,9 +16,12 @@ class BlogMeta extends Component {
                 <div className="blog__social d-flex align-items-center">
                     <h4>Share:</h4>
                     <ul>
-                        <li><a href="#" className="fb"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
-                        <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                        <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                    <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                                       <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
+                                       <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                       <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
+
+                        
                     </ul>
                 </div>
             </div>

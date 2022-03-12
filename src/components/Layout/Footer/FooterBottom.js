@@ -8,7 +8,7 @@ const FooterBottom = () => {
                 <div className="row">
                 <div className="col-xxl-12">
                     <div className="footer__copyright text-center">
-                        <p>NEST EDUCATION SYSTEM, Powered By <Link href="https://webbie.business/"><a>Webbie- A Digital Company </a></Link></p>
+                    <p>NEST Education System Powered By  <Link href="/https://webbie.business/"><a>Webbie- A Digital Company</a></Link></p>
                     </div>
                 </div>
                 </div>

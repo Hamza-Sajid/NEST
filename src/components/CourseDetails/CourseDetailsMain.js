@@ -444,7 +444,7 @@ class CourseDetailsMain extends Component {
                                                     <ul>
                                                         <li><a href="#" className="fb"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                                         <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                                        <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                                                        
                                                     </ul>
                                                 </div>
                                             </div>

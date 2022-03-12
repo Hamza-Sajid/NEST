@@ -73,7 +73,7 @@ class GetInTouch extends Component {
                                        </svg>
                                     </div>
                                     <div className="contact__info-text">
-                                       <h4>New York Office</h4>
+                                       <h4>Lahore Office</h4>
                                        <p><a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Maypole Crescent 70-80 Upper St Norwich NR2 1LT</a></p>
    
                                     </div>
@@ -114,7 +114,7 @@ class GetInTouch extends Component {
                               <ul>
                                 <li><a href="#" className="fb"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                 <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
+                                
                                 <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
                                 <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
                               </ul>
