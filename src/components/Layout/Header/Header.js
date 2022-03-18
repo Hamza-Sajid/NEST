@@ -36,7 +36,7 @@ const Header = () => {
 		<React.Fragment>
 			<Head>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-            <title>Educal – Online Course and Education React, Nextjs Template</title>
+            <title>NEST – Education System</title>
          </Head>
 			<header>
          <div id="header-sticky" className="header__area header__transparent header__padding">
@@ -166,7 +166,7 @@ const Header = () => {
                            </span>
                         </div>
                         <div className="header__btn ml-20 d-none d-sm-block">
-                           <Link href="/contact"><a className="e-btn">Try for free</a></Link>
+                           <Link href="/contact"><a className="e-btn">Sign In</a></Link>
                         </div>
                         <div className="sidebar__menu d-xl-none">
                            <div className="sidebar-toggle-btn ml-30" id="sidebar-toggle" onClick={() => {
