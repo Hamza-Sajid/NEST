@@ -3,7 +3,55 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 
+
 class SignUpMain extends Component {
+
+    
+
+        constructor()
+        {
+            super();
+            this.state={
+                fullname:"",
+                email:'',
+                phone:'',
+                password:'',
+                re_password:'',
+
+            }
+        }
+    
+    
+        handleMe(e)
+        {
+            e.preventDefault();
+            console.log(this.state)
+            let url="https://lms.webbie.business/api/signup";
+            let data={
+                name: this.state.fullname,
+                email: this.state.email,
+                phone: this.state.phone,
+                password: this.state.password,
+                password_confirmation: this.state.re_password
+            }
+            console.log('before call')
+           fetch(url,{
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body:  JSON.stringify(data)                
+            }).then((result)=>{
+                result.json().then((resp)=>{
+                    console.log(resp)
+                })
+            })
+            // .then(async(result)=>{
+            //    console.log(await result.json())
+            //     //  result.json().then((response)=>
+            //     // {
+            //     //     console.log(response);
+            //     // })
+            // })
+        }
     
     render() {
         return (
@@ -42,28 +90,47 @@ class SignUpMain extends Component {
                                         <div className="sign__input-wrapper mb-25">
                                             <h5>Full Name</h5>
                                             <div className="sign__input">
-                                                <input type="text" placeholder="Full name"/>
+                                                <input type="text"  placeholder="Full name"  value={this.state.fullname}
+                                                onChange={(data)=>{this.setState({fullname: data.target.value})}}
+                                                />
                                                 <i><FontAwesomeIcon icon={['fas', 'user']} /></i>
                                             </div>
                                         </div>
                                         <div className="sign__input-wrapper mb-25">
                                             <h5>Work email</h5>
                                             <div className="sign__input">
-                                                <input type="text" placeholder="e-mail address"/>
+                                                <input type="text" placeholder="e-mail address" value={this.state.email}
+                                                onChange={(data)=>{this.setState({email: data.target.value})}}
+                                                />
                                                 <i><FontAwesomeIcon icon={['fas', 'envelope']} /></i>
                                             </div>
                                         </div>
+
+                                        <div className="sign__input-wrapper mb-25">
+                                            <h5>Phone Number</h5>
+                                            <div className="sign__input">
+                                                <input type="text" placeholder="contact number" value={this.state.phone}
+                                                onChange={(data)=>{this.setState({phone: data.target.value})}}
+                                                />
+                                                <i><FontAwesomeIcon icon={['fas', 'phone']} /></i>
+                                            </div>
+                                        </div>
+
                                         <div className="sign__input-wrapper mb-25">
                                             <h5>Password</h5>
                                             <div className="sign__input">
-                                                <input type="text" placeholder="Password"/>
+                                                <input type="text" placeholder="Password"  value={this.state.password}
+                                                  onChange={(data)=>{this.setState({password: data.target.value})}}
+                                                />
                                                 <i><FontAwesomeIcon icon={['fas', 'lock']} /></i>
                                             </div>
                                         </div>
                                         <div className="sign__input-wrapper mb-10">
                                             <h5>Re-Password</h5>
                                             <div className="sign__input">
-                                                <input type="text" placeholder="Re-Password"/>
+                                                <input type="text" placeholder="Re-Password" value={this.state.re_password}
+                                                  onChange={(data)=>{this.setState({re_password: data.target.value})}}
+                                                />
                                                 <i><FontAwesomeIcon icon={['fas', 'lock']} /></i>
                                             </div>
                                         </div>
@@ -74,7 +141,7 @@ class SignUpMain extends Component {
                                                 </label>
                                             </div>
                                         </div>
-                                        <button className="e-btn w-100"> <span></span> Sign Up</button>
+                                        <button className="e-btn w-100" onClick={this.handleMe.bind(this)}> <span></span> Sign Up</button>
                                         <div className="sign__new text-center mt-20">
                                             <p>Already in Markit ? <Link href="/sign-in"><a>Sign In</a></Link></p>
                                         </div>

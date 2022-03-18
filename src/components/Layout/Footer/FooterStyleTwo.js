@@ -18,17 +18,13 @@ const FooterStyleTwo = () => {
                                  </div>
                               </div>
                               <div className="footer__widget-body footer__widget-body-2">
-                                 <p>NEST LMS helps organizations and institutions offer a highly effective online learning and training solution.
-
-</p>
+                                 <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best.</p>
 
                                  <div className="footer__social">
                                     <ul>
-                                    <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                                        <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                        <li><a href="#" className="tw"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                       <li><a href="#" className="wts"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
-                                       <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'instagram']} /></i></a></li>
-                                       
+                                       <li><a href="#" className="pin"><i><FontAwesomeIcon icon={['fab', 'pinterest-p']} /></i></a></li>
                                     </ul>
                                  </div>
                               </div>
@@ -62,6 +58,9 @@ const FooterStyleTwo = () => {
                               <div className="footer__widget-body">
                                  <div className="footer__link footer__link-2">
                                     <ul>
+                                       <li><Link href="/instructor"><a>Browse Library</a></Link></li>
+                                       <li><Link href="/instructor"><a>Library</a></Link></li>
+                                       <li><Link href="/instructor"><a>Partners</a></Link></li>
                                        <li><Link href="/blog"><a>News & Blogs</a></Link></li>
                                        <li><Link href="/about"><a>FAQs</a></Link></li>
                                        <li><Link href="/course-grid"><a>Tutorials</a></Link></li>
@@ -99,7 +98,7 @@ const FooterStyleTwo = () => {
                      <div className="row">
                         <div className="col-xxl-12">
                            <div className="footer__copyright footer__copyright-2 text-center">
-                              <p>NEST Education System Powered By  <Link href="/https://webbie.business/"><a>Webbie- A Digital Company</a></Link></p>
+                              <p>© 2022 Educal, All Rights Reserved. Design By <Link href="/"><a>Theme Pure</a></Link></p>
                            </div>
                         </div>
                      </div>

@@ -36,11 +36,11 @@ const Header = () => {
 		<React.Fragment>
 			<Head>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-            <title>NEST - Education System</title>
+            <title>Educal – Online Course and Education React, Nextjs Template</title>
          </Head>
 			<header>
          <div id="header-sticky" className="header__area header__transparent header__padding">
-            <div className="container-fluid header_start">
+            <div className="container-fluid">
                <div className="row align-items-center">
                   <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
                      <div className="header__left d-flex">
@@ -87,101 +87,52 @@ const Header = () => {
                         </div>
                      </div>
                   </div>
-
-
-{/* // NEW CODE */}
-                
                   <div className="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
                      <div className="header__right d-flex justify-content-end align-items-center">
-                        <div className=" d-none d-xl-block">
-                           <nav id="mobile-menu font-style">
-                           <ul className='header_ul '>
-    <li className='header_li has-dropdown'><a className='header_a_items' href="/">Home</a></li>
-    <li id="services"><a className='header_a_items has-dropdown' href="#">Services</a>
-      <div className="sub-nav">
-        <div className="sub-nav-col left">
-          <a href="#" className="sub-nav-box header_a_items" id="box-1">
-            <div className="icon-background " id="icon-1">
-              <i className="fas fa-user-lock icon" />
-            </div>
-            <h4>Counceling</h4>
-            <p>Dedicated counceling by our experts</p>
-          </a>
-          <a href="#" className="sub-nav-box header_a_items" id="box-2">
-            <div className="icon-background" id="icon-2">
-              <i className="fas fa-user-lock icon" />
-            </div>
-            <h4>Consulting</h4>
-            <p>24/7 support team</p>
-          </a>
-          
-         
-        </div>
-        <div className="sub-nav-col right">
-          <a href="#" className="sub-nav-box header_a_items "  id="box-5">
-            <div className="icon-background" id="icon-5">
-              <i className="fas fa-trophy icon " />
-            </div>
-            <h4>Goals</h4>
-            <p>Monthly tracking</p>
-          </a>
-          <a href="#" className="sub-nav-box header_a_items" id="box-6">
-            <div className="icon-background" id="icon-6">
-              <i className="far fa-calendar-check icon" />
-            </div>
-            <h4>Onboarding</h4>
-            <p>Get started quickly</p>
-          </a>
-         
-          
-        </div>
-      </div>
-    </li>
-
-    <li id="services" className='has-dropdown'><a href="#" className='header_a_items'>Random</a>
-      <div className="sub-nav">
-        <div className="sub-nav-col left">
-          <a href="#" className="sub-nav-box header_a_items" id="box-1">
-            <div className="icon-background" id="icon-1">
-              <i className="fas fa-user-lock icon" />
-            </div>
-            <h4>Counceling</h4>
-            <p>Dedicated counceling by our experts</p>
-          </a>
-          <a href="#" className="sub-nav-box header_a_items" id="box-2">
-            <div className="icon-background" id="icon-2">
-              <i className="fas fa-user-lock icon" />
-            </div>
-            <h4>Consulting</h4>
-            <p>24/7 support team</p>
-          </a>
-          
-         
-        </div>
-        <div className="sub-nav-col right">
-          <a href="#" className="sub-nav-box header_a_items" id="box-5">
-            <div className="icon-background" id="icon-5">
-              <i className="fas fa-trophy icon" />
-            </div>
-            <h4>Goals</h4>
-            <p>Monthly tracking</p>
-          </a>
-          <a href="#" className="sub-nav-box header_a_items" id="box-6">
-            <div className="icon-background" id="icon-6">
-              <i className="far fa-calendar-check icon" />
-            </div>
-            <h4>Onboarding</h4>
-            <p>Get started quickly</p>
-          </a>
-         
-          
-        </div>
-      </div>
-    </li>
-
-  </ul>
-
-
+                        <div className="main-menu d-none d-xl-block">
+                           <nav id="mobile-menu">
+                              <ul>
+                                 <li className="has-dropdown">
+                                    <Link href="/"><a>Home</a></Link>
+                                    <ul className="submenu">
+                                       <li><Link href="/"><a>Home Style 1</a></Link></li>
+                                       <li><Link href="/home-2"><a>Home Style 2</a></Link></li>
+                                       <li><Link href="/home-3"><a>Home Style 3</a></Link></li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-dropdown">
+                                    <Link href="/course-grid"><a>Courses</a></Link>
+                                    <ul className="submenu">
+                                       <li><Link href="/course-grid"><a>Courses</a></Link></li>
+                                       <li><Link href="/course-list"><a>Courses List</a></Link></li>
+                                       <li><Link href="/course-sidebar"><a>Courses Sidebar</a></Link></li>
+                                       <li><Link href="/course-details"><a>Courses Details</a></Link></li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-dropdown">
+                                    <Link href="/blog"><a>Blog</a></Link>
+                                    <ul className="submenu">
+                                       <li><Link href="/blog"><a>Blog</a></Link></li>
+                                       <li><Link href="/blog-details"><a>Blog Details</a></Link></li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-dropdown">
+                                    <Link href="/course-grid"><a>Pages</a></Link>
+                                    <ul className="submenu">
+                                       <li><Link href="/about"><a>About</a></Link></li>
+                                       <li><Link href="/instructor"><a>Instructor</a></Link></li>
+                                       <li><Link href="/instructor-details"><a>Instructor Details</a></Link></li>
+                                       <li><Link href="/event-details"><a>Event Details</a></Link></li>
+                                       <li><Link href="/cart"><a>My Cart</a></Link></li>
+                                       <li><Link href="/wishlist"><a>My Wishlist</a></Link></li>
+                                       <li><Link href="/checkout"><a>Checkout</a></Link></li>
+                                       <li><Link href="/sign-in"><a>Sign In</a></Link></li>
+                                       <li><Link href="/sign-up"><a>Sign Up</a></Link></li>
+                                       <li><Link href="/error"><a>Error</a></Link></li>
+                                    </ul>
+                                 </li>
+                                 <li><Link href="/contact"><a>Contact</a></Link></li>
+                              </ul>
                            </nav>
                         </div>
                         <div className="header__search p-relative ml-50 d-none d-md-block">
@@ -228,11 +179,6 @@ const Header = () => {
                        </div>
                      </div>
                   </div>
-
-
-
-
-
                </div>
             </div>
          </div>

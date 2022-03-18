@@ -1,30 +1,32 @@
-import React, { Component , useState} from 'react';
+import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-class SignInMain extends Component {
+class ForgetPasswordMain extends Component {
 
     constructor()
     {
         super();
         this.state={
-            email:"",
-            password:''
+            pre_password:'',
+            new_password:'',
+            confirm_password:''
         }
     }
     handleMe(e)
     {
         e.preventDefault();
-        let url="http://lms.webbie.business/api/login";
+        let url="http://lms.webbie.business/api/change-password";
       let data={
-          email: this.state.email,
-          password: this.state.password
+          old_password: this.state.pre_password,
+          new_password: this.state.new_password,
+          confirm_password:this.state.confirm_password,
       }
         
         //console.log(data)
         fetch(url,{
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body:  JSON.stringify(data)                
+            body:  JSON.stringify("welcome")                
         }).then((result)=>{
             console.log(result)
             result.json().then((resp)=>{
@@ -51,7 +53,7 @@ class SignInMain extends Component {
                         <div className="row">
                             <div className="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2">
                                 <div className="section__title-wrapper text-center mb-55">
-                                    <h2 className="section__title">LOGIN</h2>
+                                    <h2 className="section__title">Forget Password</h2>
                                     <p>or if you don't have an account you can <Link href="/sign-up"><a><b style={{border:'3px solid rgb(85, 178, 75)', borderRadius: '5px' , background: 'rgb(85, 178, 75)', color: 'white'}}>Register here!</b></a></Link></p>
                                 </div>
                             </div>
@@ -60,47 +62,49 @@ class SignInMain extends Component {
                             <div className="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                                 <div className="sign__wrapper white-bg">
                                     <div className="sign__header mb-35">
-                                    <div className="sign__in text-center">
-                                    <a href="#" className="sign__social g-plus text-start mb-15"><i><FontAwesomeIcon icon={['fab', 'google']} /></i>Login With Google</a>
-                                        <a  href="#" className="sign__social text-start mb-15"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i>Login With Facebook</a>
-                                        
-                                        <p> <span>........</span> Or, <Link href="/sign-in"><a>sign in</a></Link> with your email<span> ........</span> </p>
-                                    </div>
+                                    {/* <h5>Forget Password</h5> */}
                                     </div>
                                     <div className="sign__form">
                                     <form action="#">
-                                        <div className="sign__input-wrapper mb-25">
+                                        {/* <div className="sign__input-wrapper mb-25">
                                             <h5>Email Address</h5>
                                             <div className="sign__input">
                                                 <input type="text" placeholder="E-mail address" value={this.state.email}
                                                  onChange={(data)=>{this.setState({email: data.target.value})}}/>
                                                 <i><FontAwesomeIcon icon={['fas', 'envelope']} /></i>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="sign__input-wrapper mb-10">
-                                            <h5>Password</h5>
+                                            <h5>Previous Password</h5>
                                             <div className="sign__input">
-                                                <input type="text" placeholder="Password" value={this.state.password}
-                                                onChange={(data)=>{this.setState({password: data.target.value})}}
+                                                <input type="text" placeholder="Password" value={this.state.pre_password}
+                                                onChange={(data)=>{this.setState({pre_password: data.target.value})}}
                                                 />
                                                 <i><FontAwesomeIcon icon={['fas', 'lock']} /></i>
                                             </div>
                                         </div>
-                                        <div className="sign__action d-sm-flex justify-content-between mb-30">
-                                            <div className="sign__agree d-flex align-items-center">
-                                                <input className="m-check-input" type="checkbox" id="m-agree"/>
-                                                <label className="m-check-label"  htmlFor="m-agree">Keep me signed in</label>
-                                            </div>
-                                            <div className="sign__forgot">
-                                                <a href="#">
-                                                <Link href="/forget-password"><a>
-                                                Forgot your password?</a>
-                                                </Link>
-                                                </a>
-                                                
+
+                                        <div className="sign__input-wrapper mb-10">
+                                            <h5>New Password</h5>
+                                            <div className="sign__input">
+                                                <input type="text" placeholder="Password" value={this.state.new_password}
+                                                onChange={(data)=>{this.setState({new_password: data.target.value})}}
+                                                />
+                                                <i><FontAwesomeIcon icon={['fas', 'lock']} /></i>
                                             </div>
                                         </div>
-                                        <button className="e-btn  w-100"  onClick={this.handleMe.bind(this)}> <span></span> Login</button>
+
+                                        <div className="sign__input-wrapper mb-10">
+                                            <h5>Confirm Password</h5>
+                                            <div className="sign__input">
+                                                <input type="text" placeholder="Password" value={this.state.confirm_password}
+                                                onChange={(data)=>{this.setState({confirm_password: data.target.value})}}
+                                                />
+                                                <i><FontAwesomeIcon icon={['fas', 'lock']} /></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <button className="e-btn  w-100"  onClick={this.handleMe.bind(this)}> <span></span> Reset</button>
                                         
                                         <div className="sign__new text-center mt-20">
                                             <p>New to our platform? <Link href="/sign-up"><a>Sign Up</a></Link></p>
@@ -118,4 +122,4 @@ class SignInMain extends Component {
     }
 }
 
-export default SignInMain;
+export default ForgetPasswordMain;
