@@ -68,6 +68,14 @@
                             color: #d2173f;
                         }
                     }
+                    &.wts{
+                        background: #55B24B;
+                        border-color: #55B24B;
+                        &:hover{
+                            background: transparent;
+                            color: #55B24B;
+                        }
+                    }
                 }
             }
         }
