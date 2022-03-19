@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
     Accordion,
     AccordionItem,
@@ -9,17 +9,27 @@ import {
 
 const CheckoutCoupon = () => {
 
+   
+    
+    
+      const setExpand=(index)=>e=>{
+         let temp=[...FAQS]
+         temp[index].expanded= !temp[index].expanded
+         setFAQS(temp)
+      }
+
     return(
         <div className="coupon-accordion">
-            <Accordion className="accodion-style--1" preExpanded={'0'}>
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>
-                            <h3>Returning customer? <span id="showlogin">Click here to login</span></h3>
-                        </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                    <div id="checkout-login" className="coupon-content">
+
+<Accordion allowZeroExpanded  className="accodion-style--1" >
+        
+        <AccordionItem onClick={setExpand}   >
+            <AccordionItemHeading>
+             
+              <AccordionItemButton  >  <h3>Returning customer? <span id="showlogin">Click here to login</span></h3></AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+            <div id="checkout-login" className="coupon-content">
                         <div className="coupon-info">
                             <p className="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est
                                 sit amet ipsum luctus.</p>
@@ -45,9 +55,20 @@ const CheckoutCoupon = () => {
                             </form>
                         </div>
                     </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
-            </Accordion>
+            </AccordionItemPanel>
+          </AccordionItem>
+        
+    </Accordion>
+
+
+
+
+            
+    
+
+
+
+
         </div>
     )
 }

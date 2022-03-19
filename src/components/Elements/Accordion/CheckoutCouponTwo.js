@@ -11,15 +11,21 @@ const CheckoutCouponTwo = () => {
 
     return(
         <div className="coupon-accordion">
-            <Accordion className="accodion-style--2" preExpanded={'0'}>
-                <AccordionItem>
-                    <AccordionItemHeading>
-                        <AccordionItemButton>
-                            <h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
-                        </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <div id="checkout_coupon" className="coupon-checkout-content">
+         
+
+
+
+
+            <Accordion allowZeroExpanded className="accodion-style--2">
+    
+    <AccordionItem >
+        <AccordionItemHeading>
+            <AccordionItemButton>
+            <h3>Have a coupon? <span id="showcoupon">Click here to enter your code</span></h3>
+            </AccordionItemButton>
+        </AccordionItemHeading>
+        <AccordionItemPanel>
+        <div id="checkout_coupon" className="coupon-checkout-content">
                            <div className="coupon-info">
                               <form action="#">
                                     <p className="checkout-coupon">
@@ -29,9 +35,12 @@ const CheckoutCouponTwo = () => {
                               </form>
                            </div>
                         </div>
-                    </AccordionItemPanel>
-                </AccordionItem>
-            </Accordion>
+        </AccordionItemPanel>
+    </AccordionItem>
+</Accordion>
+
+
+
         </div>
     )
 }

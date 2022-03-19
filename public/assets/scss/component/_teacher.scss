@@ -3,7 +3,23 @@
 /*----------------------------------------*/
 /*  20. TEACHER CSS START
 /*----------------------------------------*/
+.b-signin{
+    border:3px solid rgb(85, 178, 75);
+    border-radius: 5px;
+     background: rgb(85, 178, 75);
+      color: white;
 
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        border: 3px solid #55b24b;
+        border-radius: 5px;
+        background: #55b24b;
+        color: white;
+        width: 40%;
+        display: block;
+        margin: auto;
+      }
+}
 .teacher{
     &__item{
         @include border-radius(6px);
@@ -146,14 +162,14 @@
             padding: 0 25px;
             border: 2px solid #eef0f6;
             @include border-radius(4px);
-            color: $black;
+            color: white;
             font-weight: 16px;
             font-weight: 500;
             text-transform: capitalize;
-            background: $white;
+            background: #55B24B;
             &:hover{
-                background: $e-blue;
-                color: $white;
+                background: white;
+                color: black;
                 border-color: $e-blue;
             }
             i {
@@ -185,6 +201,7 @@
         & .section__title{
             font-size: 30px;
         }
+       
     }
     &__details{
         &-thumb{

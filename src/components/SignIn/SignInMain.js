@@ -52,7 +52,7 @@ class SignInMain extends Component {
                             <div className="col-xxl-8 offset-xxl-2 col-xl-8 offset-xl-2">
                                 <div className="section__title-wrapper text-center mb-55">
                                     <h2 className="section__title">LOGIN</h2>
-                                    <p>or if you don't have an account you can <Link href="/sign-up"><a><b style={{border:'3px solid rgb(85, 178, 75)', borderRadius: '5px' , background: 'rgb(85, 178, 75)', color: 'white'}}>Register here!</b></a></Link></p>
+                                    <p>or if you don't have an account you can <Link href="/sign-up"><a><b className='b-signin'>Register here!</b></a></Link></p>
                                 </div>
                             </div>
                         </div>

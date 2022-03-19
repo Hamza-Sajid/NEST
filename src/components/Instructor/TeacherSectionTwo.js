@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Bitbucket, faEnvelope } from '@fortawesome/free-solid-svg-icons' // <-- import styles to be used
 import Link from 'next/link';
+import { faBitcoin } from '@fortawesome/free-brands-svg-icons';
 
 class TeacherTwo extends Component {
 
@@ -10,11 +12,15 @@ class TeacherTwo extends Component {
             <section className="teacher__area pt-115 pb-110">
             <div className="container">
                <div className="row">
+               
+               
+
                   <div className="col-xxl-6 offset-xxl-3">
                      <div className="section__title-wrapper text-center mb-60">
                         <h2 className="section__title">Our Most <br/>
                            Popular <span className="yellow-bg"> Teachers <img src="assets/img/shape/yellow-bg-2.png" alt="img not found"/>  </span> <br/>
                         </h2>
+                        
                         <p>You don't have to struggle alone, you've got our assistance and help.</p>
                      </div>
                   </div>
@@ -33,7 +39,10 @@ class TeacherTwo extends Component {
                            <ul>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
+                                
+                                 
                               </ul>
                            </div>
                         </div>
@@ -50,9 +59,11 @@ class TeacherTwo extends Component {
 
                            <div className="teacher__social">
                            <ul>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                           <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
+                                 
                               </ul>
                            </div>
                         </div>
@@ -69,9 +80,10 @@ class TeacherTwo extends Component {
 
                            <div className="teacher__social">
                             <ul>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                            <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
                               </ul>
                            </div>
                         </div>
@@ -88,9 +100,12 @@ class TeacherTwo extends Component {
 
                            <div className="teacher__social">
                             <ul>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                               
+                            <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
+
                               </ul>
                            </div>
                         </div>
@@ -107,10 +122,13 @@ class TeacherTwo extends Component {
 
                            <div className="teacher__social">
                             <ul>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                                
+                            <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
-                              </ul>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
+
+                                                               </ul>
                            </div>
                         </div>
                      </div>
@@ -126,9 +144,12 @@ class TeacherTwo extends Component {
 
                            <div className="teacher__social">
                             <ul>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
+                                 
+                            <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'whatsapp']} /></i></a></li>
+                                 <li><a href="#"><i> <FontAwesomeIcon icon={faEnvelope} /></i></a></li>
+
                               </ul>
                            </div>
                         </div>

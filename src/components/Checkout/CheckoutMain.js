@@ -222,7 +222,7 @@ class CheckoutMain extends Component {
                                 <div className="col-lg-6">
                                     <div className="your-order mb-30 ">
                                         <h3>Your order</h3>
-                                        <div className="your-order-table table-responsive">
+                                        <div className= "your-order-table table-responsive">
                                             <table>
                                                 <thead>
                                                     <tr>

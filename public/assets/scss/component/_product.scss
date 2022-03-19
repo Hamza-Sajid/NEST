@@ -601,7 +601,7 @@ p.checkout-coupon input[type="text"] {
 
 .checkout-form-list input[type="text"], .checkout-form-list input[type="password"], .checkout-form-list input[type="email"] {
   background: #ffffff;
-  border: 1px solid #eaedff;
+  border: 3px solid #eaedff;
   border-radius: 0;
   height: 45px;
   padding: 0 0 0 10px;
@@ -676,7 +676,8 @@ p.checkout-coupon input[type="text"] {
 
 .your-order {
 	padding: 30px 40px 45px;
-	border: 3px solid #eaedff;
+	border: 2px solid #55B24B;
+  border-radius: 10px;
 }
 
 @media (max-width: 767px) {

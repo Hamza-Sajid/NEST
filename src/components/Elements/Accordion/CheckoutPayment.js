@@ -48,17 +48,34 @@ const CheckoutPayment = () => {
                     <AccordionItemHeading>
                         <AccordionItemButton>
                             <h2 className="accordion-header" id="paypalThree">
-                                <button className="accordion-button collapsed" type="button">PayPal</button>
+                                <button className="accordion-button collapsed" type="button">EasyPaisa</button>
                             </h2>
                         </AccordionItemButton>
                     </AccordionItemHeading>
 
                     <AccordionItemPanel>
                         <div className="accordion-body">
-                            Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                            Pay via EasyPaisa pay your fees with EasyPaisa sitting at our home
                         </div>
                     </AccordionItemPanel>
                 </AccordionItem>
+
+                <AccordionItem>
+                    <AccordionItemHeading>
+                        <AccordionItemButton>
+                            <h2 className="accordion-header" id="paypalThree">
+                                <button className="accordion-button collapsed" type="button">JazzCash</button>
+                            </h2>
+                        </AccordionItemButton>
+                    </AccordionItemHeading>
+
+                    <AccordionItemPanel>
+                        <div className="accordion-body">
+                            Now pay via JazzCash platform
+                        </div>
+                    </AccordionItemPanel>
+                </AccordionItem>
+
             </Accordion>
         </div>
     )

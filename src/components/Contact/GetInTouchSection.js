@@ -17,7 +17,7 @@ class GetInTouch extends Component {
                            <p>Have a question or just want to say hi? We'd love to hear from you.</p>
                         </div>
                         <div className="contact__form">
-                           <form action="assets/mail.php">
+                           <form action="mailto:info@nest.net.pk" method="post" encType="text/plain" >
                               <div className="row">
                                  <div className="col-xxl-6 col-xl-6 col-md-6">
                                     <div className="contact__form-input">
@@ -74,7 +74,7 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>Lahore Office</h4>
-                                       <p><a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Maypole Crescent 70-80 Upper St Norwich NR2 1LT</a></p>
+                                       <p><a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">28.B B.O.R Society Johar Town Lahore</a></p>
    
                                     </div>
                                  </div>
@@ -103,8 +103,8 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>Phone</h4>
-                                       <p><a href="tel:+(426)-742-26-44">+(92) 345-6669223</a></p>
-                                       <p><a href="tel:+(224)-762-442-32">+(92) 333-8165540</a></p>
+                                       <p><a href="tel:+(426)-742-26-44">+(92) 345-6669-223</a></p>
+                                       <p><a href="tel:+(224)-762-442-32">+(92) 333-8165-540</a></p>
                                     </div>
                                  </div>
                               </li>

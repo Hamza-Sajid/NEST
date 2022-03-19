@@ -5,6 +5,8 @@ import React from 'react';
 import withRedux from "next-redux-wrapper";
 import store from '../redux/store';
 import { loadIcons } from '../utils/IconLoader';
+import Head from "next/head";
+
 
 loadIcons();
 
@@ -21,10 +23,20 @@ class MyApp extends App {
         //Page props that were returned  from 'getInitialProps' are stored in the props i.e. pageprops
         const {Component, pageProps, store} = this.props;
 
+      
         return (
-            <Provider store={store}>
-                <Component {...pageProps}/>
-            </Provider>
+            <>
+             <Provider store={store}>
+
+<Component {...pageProps}/>
+
+
+</Provider>
+              <Head>
+        <link rel="shortcut icon" href="/logo.png" />
+      </Head>
+      </>
+           
         );
     }
 }

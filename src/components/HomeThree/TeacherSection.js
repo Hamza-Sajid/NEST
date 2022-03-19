@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
+
 class Teacher extends Component {
+
 
     render() {
 
@@ -10,6 +12,7 @@ class Teacher extends Component {
         <section className="teacher__area pt-115 pb-100">
             <div className="container">
                <div className="row">
+               <FontAwesomeIcon icon={regular('coffee')} />
                   <div className="col-xxl-6 offset-xxl-3">
                      <div className="section__title-wrapper text-center mb-60">
                         <h2 className="section__title">Our Most <br />
@@ -33,7 +36,7 @@ class Teacher extends Component {
                               <ul>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 
                               </ul>
                            </div>
                         </div>
@@ -52,7 +55,7 @@ class Teacher extends Component {
                               <ul>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 
                               </ul>
                            </div>
                         </div>
@@ -71,7 +74,7 @@ class Teacher extends Component {
                               <ul>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'facebook-f']} /></i></a></li>
                                  <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'twitter']} /></i></a></li>
-                                 <li><a href="#"><i><FontAwesomeIcon icon={['fab', 'vimeo-v']} /></i></a></li>
+                                 
                               </ul>
                            </div>
                         </div>
