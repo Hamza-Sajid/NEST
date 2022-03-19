@@ -37,6 +37,8 @@ const Header = () => {
 			<Head>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
             <title>NEST – Education System</title>
+
+
          </Head>
 			<header>
          <div id="header-sticky" className="header__area header__transparent header__padding">

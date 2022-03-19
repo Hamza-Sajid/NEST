@@ -23,20 +23,13 @@ class MyApp extends App {
         //Page props that were returned  from 'getInitialProps' are stored in the props i.e. pageprops
         const {Component, pageProps, store} = this.props;
 
-      
         return (
-            <>
-             <Provider store={store}>
-
-<Component {...pageProps}/>
-
-
-</Provider>
-              <Head>
-        <link rel="shortcut icon" href="/logo.png" />
-      </Head>
-      </>
-           
+            <Provider store={store}>
+               
+              
+      
+                <Component {...pageProps}/>
+            </Provider>
         );
     }
 }
